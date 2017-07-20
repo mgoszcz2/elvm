@@ -90,6 +90,7 @@ ELC_SRCS := \
 	js.c \
 	lua.c \
 	ll.c \
+	misty.c \
 	php.c \
 	piet.c \
 	pietasm.c \
@@ -236,6 +237,10 @@ endif
 
 TARGET := js
 RUNNER := nodejs
+include target.mk
+
+TARGET := misty
+RUNNER := echo "FIXME"
 include target.mk
 
 TARGET := php
